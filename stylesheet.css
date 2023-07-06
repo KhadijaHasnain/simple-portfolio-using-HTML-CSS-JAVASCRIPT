@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+body
+{
+    color: azure;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: black;
+    text-align: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards ;
+}
+.navbar a
+{
+    display: inline-block;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+.navbar a:hover
+{
+    color: cornflowerblue;
+}
+.Home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(https://alauvsmnzo.cloudimg.io/v7/_imageprod_/choosing-tech-stack-for-web-development/Right-Tech-Stack.png?w=400&q=85&amp%3Borg_if_sml=1&amp%3Bforce_format=webp) no-repeat;
+    background-size: cover ;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.Home-content
+{
+    max-width: 600px;
+}
+.Home-content h3
+{
+    font-size:32px ;
+    font-weight:700 ;
+}
+.Home-content h3 span
+{
+    color: gray;
+}
+.Home-content h3:nth-of-type(2)
+{
+    margin-bottom: 30px;
+}
+.Home-content h1
+{
+    font-size:56px ;
+    font-weight:700 ;
+    margin: -3px 0;
+}
+.Home-content p
+{
+    font-size:28px ;
+}
+.Home-sci a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.Home-sci a:hover
+{
+    background: transparent;
+    color: grey;
+    box-shadow: 0 0 20px grey;
+}
+.btn-box
+{
+    display: inline-block;
+    padding: 12px 28px;
+    background: gray;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover
+{
+    box-shadow: 0 0 5px grey ,
+    0 0 25px grey , 0 0 50px gray ,
+    0 0 100px grey , 0 0 200px grey;
+}
+@keyframes slideRight
+{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop
+{
+    0%
+    {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
